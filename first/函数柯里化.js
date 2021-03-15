@@ -1,12 +1,6 @@
 var sum = 0
-const save = () => (number) => {
-    if (number) {
-        return sum ? sum += number : sum = number
-    }
-    else {
-        return sum
-    }
-}
+const save = () => (number) => number ? sum + =number : sum
+
 const add = save()
 
 add(100)
